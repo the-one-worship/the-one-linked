@@ -19,7 +19,7 @@ export function useActionButton() {
   const onPicking = useCallback(() => {
     const index = getRandomIntByTimes(MEMBERS.length, 1000)
     toast.info(MEMBERS[index])
-  }, [toast])
+  }, [])
 
   const onGrouping = useCallback(
     (groups: number) => {
