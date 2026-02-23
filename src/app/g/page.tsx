@@ -2,13 +2,14 @@
 import { useRouter, useSearchParams } from 'next/navigation'
 
 import { useEffect, useMemo } from 'react'
+import { Suspense } from 'react'
 
 import { MemberMap } from '@/constants/member'
 import decodeShuffleMember from '@/utils/decode-shuffle-member'
 import getEncodeShuffleMember from '@/utils/get-encode-shuffle-member'
 import grouping from '@/utils/grouping'
 
-export default function GroupingPage() {
+export function GroupingPage() {
   const router = useRouter()
   const searchParams = useSearchParams()
 
@@ -46,5 +47,13 @@ export default function GroupingPage() {
         </div>
       ))}
     </div>
+  )
+}
+
+export default function GroupingPageWrapper() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <GroupingPage />
+    </Suspense>
   )
 }

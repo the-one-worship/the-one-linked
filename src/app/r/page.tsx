@@ -1,7 +1,7 @@
 'use client'
 import { useRouter, useSearchParams } from 'next/navigation'
 
-import { useEffect, useMemo } from 'react'
+import { useEffect, useMemo, Suspense } from 'react'
 
 import { MoveRightIcon } from 'lucide-react'
 
@@ -9,7 +9,7 @@ import { MemberMap } from '@/constants/member'
 import decodeShuffleMember from '@/utils/decode-shuffle-member'
 import getEncodeShuffleMember from '@/utils/get-encode-shuffle-member'
 
-export default function RenderPage() {
+export function RenderPage() {
   const searchParams = useSearchParams()
   const ids = useMemo(() => {
     const id = searchParams.get('id') || ''
@@ -48,5 +48,13 @@ export default function RenderPage() {
         ))}
       </ul>
     </div>
+  )
+}
+
+export default function RenderPageWrapper() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <RenderPage />
+    </Suspense>
   )
 }
