@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[64971,["/the-one-linked/_next/static/chunks/8b9670e2b15189c1.js","/the-one-linked/_next/static/chunks/1c12e348a0b3c313.js"],"ViewportBoundary"]
+3:I[64971,["/the-one-linked/_next/static/chunks/8b9670e2b15189c1.js","/the-one-linked/_next/static/chunks/1c12e348a0b3c313.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[9080,["/the-one-linked/_next/static/chunks/8b9670e2b15189c1.js","/the-one-linked/_next/static/chunks/1c12e348a0b3c313.js"],"IconMark"]
+0:{"buildId":"JimMO3O2Q1BNb2XHWDo4v","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"The One Linked"}],["$","meta","1",{"name":"description","content":"The One Linked"}],["$","link","2",{"rel":"icon","href":"/the-one-linked/favicon.ico?favicon.e0978155.ico","sizes":"720x720","type":"image/x-icon"}],["$","$L5","3",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}

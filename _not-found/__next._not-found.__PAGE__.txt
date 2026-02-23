@@ -1,0 +1,8 @@
+1:"$Sreact.fragment"
+2:I[27179,["/the-one-linked/_next/static/chunks/e665b1ecf181ddd1.js","/the-one-linked/_next/static/chunks/ee441890c2083054.js","/the-one-linked/_next/static/chunks/663b0b7f99f064c7.js"],""]
+3:I[95277,["/the-one-linked/_next/static/chunks/e665b1ecf181ddd1.js","/the-one-linked/_next/static/chunks/ee441890c2083054.js","/the-one-linked/_next/static/chunks/663b0b7f99f064c7.js"],"Button"]
+4:I[65084,["/the-one-linked/_next/static/chunks/e665b1ecf181ddd1.js","/the-one-linked/_next/static/chunks/ee441890c2083054.js","/the-one-linked/_next/static/chunks/663b0b7f99f064c7.js"],"ActionButtons"]
+5:I[64971,["/the-one-linked/_next/static/chunks/8b9670e2b15189c1.js","/the-one-linked/_next/static/chunks/1c12e348a0b3c313.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
+0:{"buildId":"JimMO3O2Q1BNb2XHWDo4v","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"mx-auto flex h-[80vh] max-w-xs flex-col justify-center gap-8","children":[["$","h2",null,{"className":"text-center text-2xl font-bold uppercase","children":"Not Found"}],["$","section",null,{"className":"flex flex-col gap-8","children":[["$","$L2",null,{"href":"/","children":["$","div",null,{"className":"group relative inline-block w-full","children":[["$","$L3",null,{"data-slot":"double-button-top","className":"relative z-1 w-full group-hover:translate-x-1 group-hover:translate-y-1","children":"Return Home"}],["$","$L3",null,{"data-slot":"double-button-bottom","className":"border-foreground absolute -right-1 -bottom-1 z-0 w-full","variant":"outline"}]]}]}],["$","$L4",null,{}]]}]]}],null,["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"loading":null,"isPartial":false}
+7:null
