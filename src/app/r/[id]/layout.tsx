@@ -1,4 +1,4 @@
-import { LEGACY_IDS } from '@/shared/constants/legacy'
+import { LEGACY_IDS } from '@/constants/legacy'
 
 // handle legacy features
 export function generateStaticParams() {

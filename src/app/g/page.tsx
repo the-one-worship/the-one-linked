@@ -1,12 +1,12 @@
 'use client'
-import { useEffect, useMemo } from 'react'
-
 import { useRouter, useSearchParams } from 'next/navigation'
 
-import { MemberMap } from '@/shared/constants/member'
-import decodeShuffleMember from '@/shared/utils/decode-shuffle-member'
-import getEncodeShuffleMember from '@/shared/utils/get-encode-shuffle-member'
-import grouping from '@/shared/utils/grouping'
+import { useEffect, useMemo } from 'react'
+
+import { MemberMap } from '@/constants/member'
+import decodeShuffleMember from '@/utils/decode-shuffle-member'
+import getEncodeShuffleMember from '@/utils/get-encode-shuffle-member'
+import grouping from '@/utils/grouping'
 
 export default function GroupingPage() {
   const router = useRouter()
@@ -40,7 +40,9 @@ export default function GroupingPage() {
           key={group.key}
           className="flex w-full max-w-sm flex-wrap gap-4 rounded-lg border p-4"
         >
-          {group?.value?.map(item => <span key={item}>{item}</span>)}
+          {group?.value?.map(item => (
+            <span key={item}>{item}</span>
+          ))}
         </div>
       ))}
     </div>

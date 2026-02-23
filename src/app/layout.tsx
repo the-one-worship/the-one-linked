@@ -1,11 +1,14 @@
 import './globals.css'
 
 import type { Metadata } from 'next'
-import { Inter as FontSans } from 'next/font/google'
+import { Geist as FontSans } from 'next/font/google'
 
-import { Sidebar } from '@/shared/components/sidebar'
-import { Toaster } from '@/shared/components/ui/toast'
-import { cn } from '@/shared/helpers/class-name'
+import { ThemeProvider } from 'next-themes'
+
+import { Sidebar } from '@/components/sidebar'
+import { Overlays } from '@/components/ui/overlay'
+import { Toaster } from '@/components/ui/toast'
+import { cn } from '@/lib/class-name'
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -27,9 +30,12 @@ export default function RootLayout({
       <body
         className={cn('bg-background font-sans antialiased', fontSans.variable)}
       >
-        <main>{children}</main>
-        <Sidebar />
-        <Toaster />
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <main>{children}</main>
+          <Sidebar />
+          <Toaster position="top-right" />
+          <Overlays />
+        </ThemeProvider>
       </body>
     </html>
   )

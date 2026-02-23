@@ -1,4 +1,4 @@
-import { ActionButtons } from '@/shared/components/action-buttons'
+import { ActionButtons } from '@/components/action-buttons'
 
 export default function Home() {
   return (

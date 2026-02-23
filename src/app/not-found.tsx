@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
-import { ActionButtons } from '@/shared/components/action-buttons'
-import { DoubleButton } from '@/shared/components/ui/double-button'
+import { ActionButtons } from '@/components/action-buttons'
+import { DoubleButton } from '@/components/ui/double-button'
 
 export default function NotFound() {
   return (

@@ -1,13 +1,13 @@
 'use client'
-import { useEffect, useMemo } from 'react'
-
 import { useRouter, useSearchParams } from 'next/navigation'
+
+import { useEffect, useMemo } from 'react'
 
 import { MoveRightIcon } from 'lucide-react'
 
-import { MemberMap } from '@/shared/constants/member'
-import decodeShuffleMember from '@/shared/utils/decode-shuffle-member'
-import getEncodeShuffleMember from '@/shared/utils/get-encode-shuffle-member'
+import { MemberMap } from '@/constants/member'
+import decodeShuffleMember from '@/utils/decode-shuffle-member'
+import getEncodeShuffleMember from '@/utils/get-encode-shuffle-member'
 
 export default function RenderPage() {
   const searchParams = useSearchParams()
