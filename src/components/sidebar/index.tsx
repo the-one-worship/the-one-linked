@@ -16,14 +16,15 @@ export function Sidebar() {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <Drawer.Root open={isOpen} onOpenChange={setIsOpen}>
-      <Drawer.Trigger asChild>
-        <nav className="mx-auto flex w-full justify-center p-4">
-          <Button className="fixed bottom-3 rounded-full">
-            <MenuIcon />
-          </Button>
-        </nav>
+      <Drawer.Trigger
+        nativeButton={false}
+        render={<nav className="mx-auto flex w-full justify-center p-4" />}
+      >
+        <Button className="fixed bottom-3 rounded-full">
+          <MenuIcon />
+        </Button>
       </Drawer.Trigger>
-      <Drawer.Content>
+      <Drawer.Content className="rounded-t-4xl">
         <Drawer.Header className="sr-only">
           <Drawer.Title>The One Linked</Drawer.Title>
         </Drawer.Header>
