@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main
+      - main-skip-for-now
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
