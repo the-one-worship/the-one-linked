@@ -1,12 +1,6 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": [
-    "commitlint",
-    "lucide",
-    "vaul"
-  ],
-  "userWords": [
-    "GetStudioPromotionsRedemptionsParams"
-  ]
+  "words": ["commitlint", "lucide", "vaul", "hookform"],
+  "userWords": ["GetStudioPromotionsRedemptionsParams"]
 }
